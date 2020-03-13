@@ -1,5 +1,3 @@
-import { PromiseValue } from "type-fest"
-
 /**
  * Make a promise-style function synchronous.
  * @param input The function to make synchronous.
@@ -14,6 +12,6 @@ import { PromiseValue } from "type-fest"
  * //=> "<!doctype html>..."
  * ```
 */
-declare function sify<ArgumentsType, ReturnValue>(input: (...args: ArgumentsType) => ReturnValue): (...args: ArgumentsType) => PromiseValue<ReturnValue>
+declare function sify<ArgumentsType, ReturnValue>(input: (...args: ArgumentsType) => PromiseLike<ReturnValue>): (...args: ArgumentsType) => ReturnValue
 
 export = sify

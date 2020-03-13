@@ -25,8 +25,7 @@
 		"convert"
 	],
 	"dependencies": {
-		"p-syncy": "^1.0.0",
-		"type-fest": "^0.12.0"
+		"p-syncy": "^1.0.0"
 	},
 	"devDependencies": {
 		"ava": "^3.5.0",
