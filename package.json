@@ -1,6 +1,6 @@
 {
 	"name": "sify",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Make a promise-style function synchronous.",
 	"repository": "https://github.com/Richienb/sify.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
