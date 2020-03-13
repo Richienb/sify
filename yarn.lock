@@ -2930,14 +2930,13 @@ p-map@^3.0.0:
   dependencies:
     aggregate-error "^3.0.0"
 
-p-syncy@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/p-syncy/-/p-syncy-1.0.0.tgz#75cabda59fe6b0a45fe0a646f1c70e6d6af90cd5"
-  integrity sha512-hGUxF7b+KpG3pgB7RYsJevljxm/bofoHNeE6TRMEtnV/Jrrnu/aB/p8MpqCM4i74RHrAiR46cOsKY9K4H/JCNw==
+p-syncy@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/p-syncy/-/p-syncy-1.0.1.tgz#4b6c1418b8cd1ff2ffbe30f6a75596838ad1cfce"
+  integrity sha512-Vq5BOvQcmeLGMG679zE+GFinWzlJaYHZdc0bRfsZkhtge5Msr7JmQnsi89JQ6KtiyCgmh/8LywqIfvm1np1a4A==
   dependencies:
     deasync "^0.1.19"
     p-is-promise "^3.0.0"
-    type-fest "^0.12.0"
 
 p-try@^1.0.0:
   version "1.0.0"
@@ -3867,11 +3866,6 @@ type-check@~0.3.2:
   integrity sha1-WITKtRLPHTVeP7eE8wgEsrUg23I=
   dependencies:
     prelude-ls "~1.1.2"
-
-type-fest@^0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.12.0.tgz#f57a27ab81c68d136a51fd71467eff94157fa1ee"
-  integrity sha512-53RyidyjvkGpnWPMF9bQgFtWp+Sl8O2Rp13VavmJgfAP9WWG6q6TkrKU8iyJdnwnfgHI6k2hTlgqH4aSdjoTbg==
 
 type-fest@^0.3.0:
   version "0.3.1"
