@@ -1,14 +1,19 @@
+import { PromiseValue } from "type-fest"
+
 /**
- * My awesome module.
- * @param input Lorem ipsum.
- * @param postfix Lorem ipsum.
+ * Make a promise-style function synchronous.
+ * @param input The function to make synchronous.
  * @example
  * ```
- * const theModule = require("the-module");
- * theModule("unicorns");
- * //=> 'unicorns & rainbows'
+ * const sify = require("sify");
+ * const got = require("got");
+ *
+ * const {body} = sify(got)("https://google.com")
+ *
+ * console.log(body)
+ * //=> "<!doctype html>..."
  * ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string;
+declare function sify<ArgumentsType, ReturnValue>(input: (...args: ArgumentsType) => ReturnValue): (...args: ArgumentsType) => PromiseValue<ReturnValue>
 
-export = theModule;
+export = sify

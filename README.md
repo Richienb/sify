@@ -1,41 +1,35 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Sify [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/sify/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/sify)
 
-My awesome module.
+Make a promise-style function synchronous.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/sify.png)](https://npmjs.com/package/sify)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install sify
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const sify = require("sify");
+const got = require("got");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+const {body} = sify(got)("https://google.com")
+
+console.log(body)
+//=> "<!doctype html>..."
 ```
 
 ## API
 
-### theModule(input, options?)
+### sify(input)
 
 #### input
 
-Type: `string`
+Type: `function`
 
-Lorem ipsum.
+## Related
 
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+- [p-syncy](https://github.com/Richienb/p-syncy) - Resolve a promise synchronously.

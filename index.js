@@ -1,7 +1,9 @@
 "use strict"
 
-module.exports = (input, { postfix = "rainbows" } = {}) => {
-	if (typeof input !== "string") throw new TypeError(`Expected a string, got ${typeof input}`)
+const pSyncy = require("p-syncy")
 
-	return `${input} & ${postfix}`
+module.exports = (input) => {
+	if (typeof input !== "function") throw new TypeError("A function must be provided.")
+
+	return (...args) => pSyncy(input(...args))
 }
